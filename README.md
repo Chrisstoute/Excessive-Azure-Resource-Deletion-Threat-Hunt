@@ -2,17 +2,6 @@
 
 # Excessive Azure Resource Deletion Threat Hunt
 
-<<<<<<< HEAD
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B0B0B,100:C1121F&height=180&section=header&text=Microsoft%20Sentinel%20Threat%20Hunt&fontSize=34&fontColor=FFFFFF&animation=fadeIn" />
-
-<br>
-
-<img src="assets/v-for-vendetta-theme.jpg" alt="V for Vendetta themed image" width="260"/>
-
-<br><br>
-
-> **Theme:** *V for Vendetta-inspired visual style*  
-=======
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,50:7F0000,100:DC143C&height=170&section=header&text=Microsoft%20Sentinel%20Threat%20Hunt&fontSize=34&fontColor=ffffff&animation=fadeIn" />
 
 <br>
@@ -21,10 +10,8 @@
 
 <br><br>
 
-
->>>>>>> 66a1f3c (Update README theme and add visual assets)
-> **Platform:** Microsoft Sentinel  
-> **Focus:** Detection of excessive Azure resource deletion activity
+**Platform:** Microsoft Sentinel  
+**Focus:** Detection of excessive Azure resource deletion activity
 
 </div>
 
@@ -75,67 +62,7 @@ The objective of this hunt was to identify:
 ## Investigation Workflow
 
 ### 1. Confirm AzureActivity data exists
-<<<<<<< HEAD
-![1_Confirming_AzureActivity_Data_Exists](Screenshots/1_Confirming_AzureActivity_Data_Exists.jpg)
 
-### 2. Review raw write/delete Azure activity events
-![2_Raw_Write_Delete_AzureActivity_Events](Screenshots/2_Raw_Write_Delete_AzureActivity_Events.jpg)
-
-### 3. Identify successful write/delete events
-![3_Successful_Write_Delete_Events](Screenshots/3_Successful_Write_Delete_Events.jpg)
-
-### 4. Summarize write/delete activity by caller
-![4_Summarizing_Write_Delete_Activity_By_Caller](Screenshots/4_Summarizing_Write_Delete_Activity_By_Caller.jpg)
-
-### 5. Break down operations by type
-![5_Breakdown_By_Operation_Type](Screenshots/5_Breakdown_By_Operation_Type.jpg)
-
-### 6. Drill into top suspicious caller
-![6_Drilling_Into_Top_Suspicious_Caller](Screenshots/6_Drilling_Into_Top_Suspicious_Caller.jpg)
-
-### 7. Review suspicious caller operation breakdown
-![7_Suspicious_Caller_Operation_Breakdown](Screenshots/7_Suspicious_Caller_Operation_Breakdown.jpg)
-
-### 8. Review detailed delete events for suspicious caller
-![8_Detailed_Delete_Events_For_Suspicious_Caller](Screenshots/8_Detailed_Delete_Events_For_Suspicious_Caller.jpg)
-
-### 9. Identify affected resource groups by delete activity
-![9_Affected_Resource_Groups_By_Delete_Activity](Screenshots/9_Affected_Resource_Groups_By_Delete_Activity.jpg)
-
-### 10. Build Sentinel detection query
-![10_Sentinel_Detection_Query_For_Excessive_Delete_Activity](Screenshots/10_Sentinel_Detection_Query_For_Excessive_Delete_Activity.jpg)
-
-### 11. Configure analytics rule details
-![11_Analytics_Rule_Details](Screenshots/11_Analytics_Rule_Details.jpg)
-
-### 12. Configure set rule logic and entity mapping
-![12_Set_Rule_Logic_Query_And_Entity_Mapping_pt_1](Screenshots/12_Set_Rule_Logic_Query_And_Entity_Mapping_pt_1.jpg)
-
-![12_Set_Rule_Logic_Query_And_Entity_Mapping_pt_2](Screenshots/12_Set_Rule_Logic_Query_And_Entity_Mapping_pt_2.jpg)
-
-### 13. Configure incident settings and alert grouping
-![13_Incident_Settings_Alert_Grouping](Screenshots/13_Incident_Settings_Alert_Grouping.jpg)
-
-### 14. Review and create analytics rule
-![14_Review_And_Create_Analytics_Rule](Screenshots/14_Review_And_Create_Analytics_Rule.jpg)
-
-### 15. Confirm analytics rule is created and enabled
-![15_Analytics_Rule_Created_And_Enabled](Screenshots/15_Analytics_Rule_Created_And_Enabled.jpg)
-
-### 16. Confirm Sentinel incident triggered from analytics rule
-![16_Sentinel_Incident_Triggered_From_Analytics_Rule](Screenshots/16_Sentinel_Incident_Triggered_From_Analytics_Rule.jpg)
-
-### 17. Assign incident and open investigate action
-![17_Assigned_Incident_And_Opened_Investigate_Action](Screenshots/17_Assigned_Incident_And_Opened_Investigate_Action.jpg)
-
-### 18. Review Sentinel incident investigation graph
-![18_Sentinel_Incident_Investigation_Graph](Screenshots/18_Sentinel_Incident_Investigation_Graph.jpg)
-
-### 19. Document incident activity log actions
-![19_Incident_Activity_Log_Containment_Eradication_Recovery](Screenshots/19_Incident_Activity_Log_Containment_Eradication_Recovery.jpg)
-
-### 20. Close incident as true positive
-=======
 
 I started by confirming that the `AzureActivity` table contained recent log data. This gave me confidence that Sentinel had the required Azure control-plane activity available for hunting.
 
@@ -295,7 +222,6 @@ I documented containment, eradication, and recovery notes in the incident activi
 
 Finally, I closed the incident as a true positive because the analytics rule correctly detected excessive Azure resource deletion activity. This completed the Sentinel incident lifecycle from detection to closure.
 
->>>>>>> 66a1f3c (Update README theme and add visual assets)
 ![20_Closing_Incident_As_True_Positive](Screenshots/20_Closing_Incident_As_True_Positive.jpg)
 
 ---
