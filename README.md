@@ -13,6 +13,28 @@
 **Platform:** Microsoft Sentinel  
 **Focus:** Detection of excessive Azure resource deletion activity
 
+<div align="center">
+
+<table>
+<tr>
+<td align="center">
+
+<h3>🛡️ Cyber Range Scenario Credit 🛡️</h3>
+
+<strong>This threat hunt scenario was provided by Josh Madakor, CEO of The Cyber Range.</strong>
+
+<br><br>
+
+<a href="https://www.skool.com/cyber-range">
+  <img src="https://img.shields.io/badge/JOIN%20THE%20CYBER%20RANGE-CLICK%20HERE-red?style=for-the-badge&labelColor=000000&color=ff0000" alt="Join The Cyber Range">
+</a>
+
+</td>
+</tr>
+</table>
+
+</div>
+
 </div>
 
 ---
